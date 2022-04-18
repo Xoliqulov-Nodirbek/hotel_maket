@@ -253,4 +253,45 @@ a {
     display: block;
   }
 }
+
+.welcome__inner {
+  padding: 0 30px;
+}
+
+.welcome__content {
+  margin-top: 150px;
+}
+
+.welcome__content-heading--top {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 61px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome__content-heading {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.welcome__content-heading--span {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.4em;
+  color: #FFFFFF;
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */
