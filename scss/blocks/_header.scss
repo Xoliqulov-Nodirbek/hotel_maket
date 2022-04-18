@@ -3,6 +3,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    // filter:brightness(0.9);
 }
 
 .header__inner{
@@ -33,6 +34,11 @@
 
 .header__item:not(:first-child){
     margin-left: 75px;
+}
+
+.header__item-link--active{
+    font-weight: 900 !important;
+    font-size: 19px;
 }
 
 .header__item-link{
