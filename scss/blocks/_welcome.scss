@@ -2,6 +2,8 @@
     padding: 0 30px;
 }
 
+// ---------- > Content
+
 .welcome__content{
     margin-top: 150px;
 }
@@ -48,8 +50,10 @@
     margin: 15px 0 0 0;
 }
 
+// ---------- > Link
+
 .welcome__link-box{
-    margin-top: 100px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
 }
@@ -57,15 +61,15 @@
 .welcome__link{
     position: relative;
     display: inline-block;
-    padding: 22px 32px 22px 78px;
     background: #E0B973;
     border-radius: 10px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
+    padding: 18px 30px 18px 75px;
     font-size: 20px;
     color: #FFFFFF;
-
+    
     &::before{
         content: "";
         position: absolute;
@@ -75,6 +79,102 @@
         background-repeat: no-repeat;
         background-size: contain;
         left: 30px;
-        top: 20px;
+        top: 15px;
     }
 }
+
+// ---------- > Scrool
+
+.welcome__scrool-title{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 40px 0 0 0;
+}
+
+.welcome__scrool-btn{
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-image: url("../../images/scrool.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 550px) {
+    
+    // ---------- > Content
+    
+    .welcome__content{
+        margin-top: 100px;
+    }
+    
+    .welcome__content-heading--top{
+        font-size: 28px;
+        line-height: 31px;
+    }
+    
+    .welcome__content-heading{
+        font-size: 70px;
+        line-height: 50px;
+    }
+    
+    .welcome__content-heading--span{
+        font-size: 35px;
+        line-height: 42px;
+    }
+    
+    .welcome__content-text{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    
+    // ---------- > Link
+    
+    .welcome__link-box{
+        margin-top: 40px;
+    }
+    
+    .welcome__link{
+        padding: 15px 20px 15px 55px;
+        font-size: 17px;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 26px;
+            background-image: url("../../images/welcome-link.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 20px;
+            top: 15px;
+        }
+    }
+    
+    // ---------- > Scrool
+    
+    .welcome__scrool-title{
+        font-size: 20px;
+        margin: 30px 0 0 0;
+    }
+    
+    .welcome__scrool-btn{
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+} 
