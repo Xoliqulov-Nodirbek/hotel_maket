@@ -115,7 +115,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .header__logo {
@@ -424,7 +424,7 @@ a {
 
 .rooms__inner {
   margin-top: 80px;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .rooms__title {
