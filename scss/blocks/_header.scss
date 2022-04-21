@@ -104,6 +104,7 @@
     height: 40px;
 }
 
+// ------------ > Responsive part < ---------------
 
 @media only screen and (max-width: 900px) {
     
@@ -156,6 +157,7 @@
 
     .header__list-open{
         display: block;
+        z-index: 1;
     }
     
     .header__item:not(:first-child){
