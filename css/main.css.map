@@ -9,7 +9,8 @@
         "../scss/blocks/_blocks.scss",
         "../scss/blocks/_header.scss",
         "../scss/blocks/_welcome.scss",
-        "../scss/blocks/_rooms.scss"
+        "../scss/blocks/_rooms.scss",
+        "../scss/blocks/_test.scss"
     ],
     "names": [],
     "file": "main.css"
