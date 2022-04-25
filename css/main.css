@@ -716,6 +716,14 @@ a {
   color: #14274A;
 }
 
+.test__content {
+  display: none;
+}
+
+.test__content--open {
+  display: block;
+}
+
 .test__content--text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -736,6 +744,14 @@ a {
   color: #14274A;
   text-align: center;
   margin: 0;
+}
+
+.test__content1 {
+  display: none;
+}
+
+.test__content1--open {
+  display: block;
 }
 
 .test__buttons {
@@ -775,5 +791,22 @@ a {
 
 .test__buttons-two:hover {
   background: #fed995;
+}
+
+.site__footer {
+  background-image: url("../../images/foter-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
 }
 /*# sourceMappingURL=main.css.map */

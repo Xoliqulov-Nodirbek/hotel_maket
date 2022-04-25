@@ -1,0 +1,12 @@
+.site__footer{
+    background-image: url("../../images/foter-img.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
