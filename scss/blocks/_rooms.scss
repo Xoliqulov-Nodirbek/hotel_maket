@@ -16,9 +16,9 @@
 
 .rooms__title-span{
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    border: 0.2px solid black;
     border-radius: 50%;
     margin-bottom: -2px;
     margin-left: 20px;
@@ -182,7 +182,7 @@
 @keyframes animate1 {
     from{
         background-color: white;
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
     to{
         background-color: #fed995;
