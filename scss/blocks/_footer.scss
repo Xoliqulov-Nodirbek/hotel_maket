@@ -1,12 +1,55 @@
 .site__footer{
-    background-image: url("../../images/foter-img.png");
-    background-repeat: repeat;
-    background-position: 100% center 100% ; 
-    background-size: cover; 
+    background-color: #14274A;
 }
 
 .footer__inner{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 50px 0;
 }
+
+// ---------> Footer-left
+
+.footer__left-logo{
+    display: inline-block;
+    width: 118px;
+    height: 38px;
+    background-image: url("../../images/footer-logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-bottom: 10px;
+}
+
+.footer__left-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer__left-tel{
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.footer__left-email{
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+// 
