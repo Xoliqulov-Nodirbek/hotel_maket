@@ -14,20 +14,6 @@
     margin: 0;
 }
 
-.rooms__title-span{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    border: 0.2px solid black;
-    border-radius: 50%;
-    margin-bottom: -2px;
-    margin-left: 20px;
-    animation-name: animate1;
-    animation-duration: 1s;
-    animation-timing-function: liner;
-    animation-iteration-count: infinite;
-}
-
 // --------- > Wrapper1
 
 .rooms__wrapper1 {
@@ -50,6 +36,21 @@
         background-color: #14274A;
         left: 0;
     }
+}
+
+.animation-span{
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    margin: 0 0 -6px 0;
+    background-image: url("../../images/link-right.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    animation-name: animate1;
+    animation-duration: 1s;
+    animation-timing-function: liner;
+    animation-iteration-count: infinite;
 }
 
 .rooms__wrapper1-content--title {
@@ -81,7 +82,7 @@
     letter-spacing: 0.05em;
     display: inline-block;
     color: #FFFFFF;
-    padding: 10px 40px;
+    padding: 12px 40px;
     background: #E0B973;
     border-radius: 8px;
     transition: background .2s ease;
@@ -155,7 +156,7 @@
     letter-spacing: 0.05em;
     display: inline-block;
     color: #FFFFFF;
-    padding: 10px 40px;
+    padding: 12px 40px;
     background: #E0B973;
     border-radius: 8px;
     transition: background .2s ease;
@@ -181,12 +182,19 @@
 
 @keyframes animate1 {
     from{
-        background-color: white;
-        transform: scale(0.7);
+        transform: translateX(0);
     }
     to{
-        background-color: #fed995;
-        transform: scale(1.2);
+        transform: translateX(20px);
+    }
+}
+
+@keyframes animate2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-40px);
     }
 }
 
