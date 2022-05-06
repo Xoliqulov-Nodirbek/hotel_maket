@@ -4,9 +4,9 @@
 
 .footer__inner{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 65px 0;
 }
 
 // ---------> Footer-left
@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer__left-text{
@@ -52,4 +52,122 @@
     color: #FFFFFF;
 }
 
-// 
+// -------->  Footer-nav
+
+.footer__nav-list{
+    margin: 0;
+    padding: 0;
+}
+
+.footer__nav-item:not(:end){
+    margin-bottom: 10px;
+}
+
+.footer__nav-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F7F7F7;
+}
+
+// -------->  Footer-links
+
+.footer__links-list{
+    margin: 0;
+    padding: 0;
+}
+
+.footer__links-item{
+    display: flex;
+    align-items: center;
+}
+
+.footer__links-item:not(:end){
+    margin-bottom: 15px;
+}
+
+.footer__links-facebook{
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F7F7F7;
+    padding-left: 40px;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 10px;
+        height: 19px;
+        background-image: url("../../images/facebook.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transition: all .2s ease;
+    }
+}
+
+.footer__links-facebook:hover::before{
+    transform: scale(1.5);
+}
+
+.footer__links-twitter{
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F7F7F7;
+    padding-left: 40px;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        left: -2px;
+        width: 19px;
+        height: 16px;
+        background-image: url("../../images/twitter.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transition: all .2s ease;
+    }
+}
+
+.footer__links-twitter:hover::before{
+    transform: scale(1.5);
+}
+
+.footer__links-instagram{
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F7F7F7;
+    padding-left: 40px;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        left: -2px;
+        width: 19px;
+        height: 19px;
+        background-image: url("../../images/instagram.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transition: all .2s ease;
+    }
+}
+
+.footer__links-instagram:hover::before{
+    transform: scale(1.5);
+}

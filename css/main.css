@@ -161,11 +161,9 @@ a {
   content: "";
   position: absolute;
   width: 0;
-  height: 0;
+  left: 50%;
   bottom: 0;
-  left: 0;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  background-color: #fff;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
 }
@@ -174,25 +172,21 @@ a {
   content: "";
   position: absolute;
   width: 0;
-  height: 0;
-  top: 0;
-  right: 0;
-  border-right: 1px solid transparent;
-  border-top: 1px solid transparent;
+  right: 50%;
+  bottom: 0;
+  background-color: #fff;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
 }
 
 .header__item:hover .header__item-link::before {
-  width: 100%;
-  height: 100%;
-  border-color: #fff;
+  width: 45%;
+  height: 1px;
 }
 
 .header__item:hover .header__item-link::after {
-  width: 100%;
-  height: 100%;
-  border-color: #fff;
+  width: 45%;
+  height: 1px;
 }
 
 .header__menu {
@@ -819,13 +813,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 0;
+  padding: 65px 0;
 }
 
 .footer__left-logo {
@@ -836,7 +830,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .footer__left-text {
@@ -867,5 +861,131 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav-item:not(:end) {
+  margin-bottom: 10px;
+}
+
+.footer__nav-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F7F7F7;
+}
+
+.footer__links-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__links-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__links-item:not(:end) {
+  margin-bottom: 15px;
+}
+
+.footer__links-facebook {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F7F7F7;
+  padding-left: 40px;
+}
+
+.footer__links-facebook::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 19px;
+  background-image: url("../../images/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.footer__links-facebook:hover::before {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.footer__links-twitter {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F7F7F7;
+  padding-left: 40px;
+}
+
+.footer__links-twitter::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 19px;
+  height: 16px;
+  background-image: url("../../images/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.footer__links-twitter:hover::before {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.footer__links-instagram {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F7F7F7;
+  padding-left: 40px;
+}
+
+.footer__links-instagram::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../../images/instagram.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.footer__links-instagram:hover::before {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=main.css.map */

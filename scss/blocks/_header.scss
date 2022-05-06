@@ -55,11 +55,9 @@
         content: "";
         position: absolute;
         width: 0;
-        height: 0;
+        left: 50%;
         bottom: 0;
-        left: 0;
-        border-left: 1px solid transparent;
-        border-bottom: 1px solid transparent;
+        background-color: #fff;
         transition: all .8s ease;
     }
     
@@ -67,25 +65,21 @@
         content: "";
         position: absolute;
         width: 0;
-        height: 0;
-        top: 0;
-        right: 0;
-        border-right: 1px solid transparent;
-        border-top: 1px solid transparent;
+        right: 50%;
+        bottom: 0;
+        background-color: #fff;
         transition: all .8s ease;
     }
 }
 
 .header__item:hover .header__item-link::before{
-    width: 100%;
-    height: 100%;
-    border-color: #fff;
+    width: 45%;
+    height: 1px;
 }
 
 .header__item:hover .header__item-link::after{
-    width: 100%;
-    height: 100%;
-    border-color: #fff;
+    width: 45%;
+    height: 1px;
 }
 
 // ---------- > site__menu
