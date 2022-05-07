@@ -806,7 +806,22 @@ a {
 }
 
 .site__footer {
+  position: relative;
   background-color: #14274A;
+}
+
+.site__footer::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: -78px;
+  left: 45.5%;
+  background-image: url("../../images/uch.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: -1;
 }
 
 .footer__inner {
@@ -819,7 +834,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 65px 0;
+  padding: 65px 20px;
 }
 
 .footer__left-logo {
@@ -1068,5 +1083,103 @@ a {
   background-color: #E0B973;
   cursor: pointer;
   border: none;
+}
+
+@media only screen and (max-width: 1040px) {
+  .site__footer::before {
+    left: 40%;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 65px 20px;
+  }
+  .footer__left {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .footer__left-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer__left-text {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .footer__left-tel {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+  }
+  .footer__left-email {
+    display: block;
+    text-align: center;
+  }
+  .footer__nav {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .footer__links {
+    margin: 0 auto;
+  }
+  .footer__email {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .footer__email-title {
+    display: block;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  .footer__email-input {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .site__footer::before {
+    left: 44%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .site__footer::before {
+    left: 42%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .site__footer::before {
+    left: 41%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .site__footer::before {
+    left: 39%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .site__footer::before {
+    left: 37%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .site__footer::before {
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .site__footer::before {
+    left: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
