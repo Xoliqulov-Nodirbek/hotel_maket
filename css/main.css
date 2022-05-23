@@ -164,8 +164,8 @@ a {
   left: 50%;
   bottom: 0;
   background-color: #fff;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .header__item-link::after {
@@ -175,8 +175,8 @@ a {
   right: 50%;
   bottom: 0;
   background-color: #fff;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .header__item:hover .header__item-link::before {
